@@ -1,0 +1,7 @@
+<h1>Episode: <%=@episode.id%><h1>
+<h3>Guests</h3>
+<ul>
+<%@episode.guests.each do |guest|%>
+  <li><%=guest.name%></li>
+<%end%>
+</ul>
